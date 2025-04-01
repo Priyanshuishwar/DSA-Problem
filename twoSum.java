@@ -1,3 +1,10 @@
+//                   Leetcode- Two Sum
+// Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+// You may assume that each input would have exactly one solution, and you may not use the same element twice.
+// You can return the answer in any order.
+
+ 
+
 import java.util.Scanner;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -13,6 +20,7 @@ public class twoSum {
         int ans[] = twosum(arr,n,target);
         System.out.println(Arrays.toString(ans));
     }  
+    // 1. Using HashMap
     public static int[] twosum(int arr[],int n,int target){
         HashMap<Integer,Integer> map = new HashMap<>();
         for(int i =0;i<n;i++){
@@ -24,7 +32,7 @@ public class twoSum {
         return new int[]{-1,-1};
     } 
 }    
-              /*1. Using Nested Loop */
+              /*2. Using Nested Loop */
     // public static int[] twosum(int arr[],int n,int target){
     //     int p[] = new int[2];
     //     p[0] =-1;
@@ -39,4 +47,3 @@ public class twoSum {
     //     }
     //     return p;
     // }
-    /*2. Using HashMap */
